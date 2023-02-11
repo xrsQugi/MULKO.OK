@@ -1,0 +1,141 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  padding: 2% 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .nav_mobile {
+    display: none;
+  }
+}
+
+.nav_mobile_ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav {
+  flex-grow: 3;
+}
+
+.nav_menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_menu_link {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 130%;
+  color: #ffffff;
+}
+
+input[type=checkbox],
+label {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  nav {
+    order: 1;
+  }
+  label {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+  }
+  label:hover {
+    cursor: pointer;
+  }
+  label span {
+    top: 30px;
+  }
+  label span,
+  label span::before,
+  label span::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 3px;
+    border-radius: 3px;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    transition: 0.3s;
+  }
+  label span::before {
+    top: -8px;
+  }
+  label span::after {
+    top: 8px;
+  }
+  .nav_menu {
+    display: none;
+  }
+  input[type=checkbox]:checked ~ .nav_menu {
+    display: flex;
+    flex-direction: column;
+  }
+  input[type=checkbox]:checked ~ label span {
+    transform: rotate(-45deg);
+  }
+  input[type=checkbox]:checked ~ label span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  input[type=checkbox]:checked ~ label span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  .nav_menu {
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    background: #FEA3B4;
+    gap: 24px;
+    padding: 40px 0;
+  }
+  .nav_menu .symbols {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .nav_menu .symbols div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav_menu .symbols div svg {
+    width: 35px;
+    height: 30px;
+    fill: #ffffff;
+  }
+}/*# sourceMappingURL=main.css.map */
