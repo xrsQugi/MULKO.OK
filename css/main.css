@@ -35,6 +35,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
 }
+.nav_mobile_ul .mulka {
+  width: 165px;
+  height: 44px;
+}
 
 nav {
   flex-grow: 3;
