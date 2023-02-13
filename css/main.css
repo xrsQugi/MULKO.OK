@@ -142,4 +142,48 @@ label {
     height: 30px;
     fill: #ffffff;
   }
+}
+.navigation-comp {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-comp {
+    display: flex;
+    height: 41px;
+    justify-content: space-between;
+  }
+  .logo .mulka {
+    width: 200px;
+    height: 40px;
+    filter: 0;
+  }
+  .navigation-ul-comp {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+  }
+  .navigation-ul-comp .medias {
+    width: 70%;
+    gap: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .navigation-ul-comp svg {
+    width: 35px;
+    height: 35px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+  .navigation-ul-comp a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }/*# sourceMappingURL=main.css.map */
